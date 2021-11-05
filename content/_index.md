@@ -25,5 +25,5 @@ kijk op de work a way site!
 
 ### Permacultuur & groentes kweken
 We doen aan bomen planten in het bos. Ook onderhouden we een
-weggeef moestuin in samenwerking met [de BesmerBazaar](http://facebook pagina Besmer Bazaar).
+weggeef moestuin in samenwerking met [de BesmerBazaar](www.facebook.com/besmerbazaar).
 
