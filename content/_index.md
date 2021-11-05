@@ -12,3 +12,18 @@ zelfvoorzienend te leven waardoor we een gezonde toekomst voor onszelf en de
 volgende generaties creëren.
 
 Een gemeenschap waar je thuis kan komen in je zelf!
+
+## Doe mee!
+
+### Frog garden helpen opbouwen
+De Frog garden (kikkertuin) is een prachtig stukje grond in het bos, waar
+een mooi huisje op staat. We zoeken mensen die mee willen bouwen en zorg
+dragen voor het huisje. Doe je mee?
+
+### Work a way bij Johan & Rika
+kijk op de work a way site!
+
+### Permacultuur & groentes kweken
+We doen aan bomen planten in het bos. Ook onderhouden we een
+weggeef moestuin in samenwerking met [de BesmerBazaar](http://facebook pagina Besmer Bazaar).
+
