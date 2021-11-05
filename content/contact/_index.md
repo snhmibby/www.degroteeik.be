@@ -5,7 +5,8 @@ weight: 3
 ---
 
 ☎: +0032485591943 
-📧: [temporarily my e-mail address](jurjenm@yahoo.com)
+
+✉: [temporarily my e-mail address](jurjenm@yahoo.com)
 
 # Route
 ![De laatste 200m het bos in](map.jpg)
