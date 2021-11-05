@@ -1,3 +1,8 @@
+---
+title: "Oud welkom boek"
+date: 2021-11-05T22:13:01+01:00
+---
+
 # WELKOM in de kikkertuin
 
 Vertaling van het Frog Garden Info-Book zoals gemaakt door destijdse bewoners

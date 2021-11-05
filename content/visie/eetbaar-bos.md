@@ -1,3 +1,7 @@
+---
+title: "Eetbaar bos"
+date: 2021-11-05T22:13:01+01:00
+---
 Als wij in de lage landen niets doen aan een stukje land, dan zal dat stukje
 land bos worden. Als we de natuur zijn gang laten gaan, zal het een
 gebalanceerd, duurzaam en een zichzelf herstellend ecosysteem worden. Dit heet

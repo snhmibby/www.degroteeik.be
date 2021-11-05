@@ -1,3 +1,8 @@
+---
+title: "Bewustzijn"
+date: 2021-11-05T22:13:01+01:00
+---
+
 Het is duidelijk dat de natuur helend op ons werkt. Wij zijn onderdeel van de
 natuur en ons systeem wordt rustig als we in een natuurlijke omgeving met
 zingende blaadjes, dansende bomen, fluitende vogeltjes, ritselende muisjes en

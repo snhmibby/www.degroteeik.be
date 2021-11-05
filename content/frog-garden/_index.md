@@ -1,3 +1,8 @@
+---
+title: "Frog Garden"
+date: 2021-11-05T22:13:01+01:00
+---
+
 # De Frog Garden
 
 Een plek waar je kan **thuis** komen. Dit is één van de locaties van de
