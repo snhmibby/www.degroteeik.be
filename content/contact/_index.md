@@ -1,10 +1,13 @@
 ---
-title: "Route"
+title: "Contact"
 date: 2021-11-05T22:13:01+01:00
 weight: 3
 ---
 
-# De laatse meters
+☎: +0032485591943 
+📧: [temporarily my e-mail address](jurjenm@yahoo.com)
+
+# Route
 ![De laatste 200m het bos in](map.jpg)
 
 Gebruik voor de automatische navigatie dit adres (niet het onze): Kiewitseweg 8 , 3690 Zutendaal, Belgie.
