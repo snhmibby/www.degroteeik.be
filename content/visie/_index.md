@@ -1,6 +1,7 @@
 ---
 title: "Visie"
 date: 2021-11-05T22:13:01+01:00
+weight: 1
 ---
 
 # Vzw De Grote Eik is heeft als visie
