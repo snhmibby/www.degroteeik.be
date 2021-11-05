@@ -4,8 +4,6 @@ date: 2021-11-05T22:13:01+01:00
 weight: 2
 ---
 
-# De Frog Garden
-
 Een plek waar je kan **thuis** komen. Dit is één van de locaties van de
 leefgemeenschap van de Grote Eik in Zutendaal. Een plek in het **midden in de
 natuur**.

@@ -4,8 +4,6 @@ date: 2021-11-05T22:13:01+01:00
 weight: 1
 ---
 
-# Vzw De Grote Eik is heeft als visie
-
 Een gemeenschap van mensen en dieren te zijn die leven in EENHEID
 EN verbondenheid met de natuur en elkaar. Een gemeenschap die
 geïnspireerd is om duurzaam en zelfvoorzienend te leven waardoor
