@@ -9,6 +9,7 @@ EN verbondenheid met de natuur en elkaar. Een gemeenschap die
 geïnspireerd is om duurzaam en zelfvoorzienend te leven waardoor
 we een gezonde toekomst voor onszelf en de volgende generaties
 manifesteren.
+<!--more-->
 
 Als VZW willen we graag een vruchtbare grond zijn waar we in
 verbinding staan met onszelf, de natuur, en de samenleving. Een

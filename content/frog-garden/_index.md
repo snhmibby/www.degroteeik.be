@@ -7,6 +7,7 @@ weight: 2
 Een plek waar je kan **thuis** komen. Dit is één van de locaties van de
 leefgemeenschap van de Grote Eik in Zutendaal. Een plek in het **midden in de
 natuur**.
+<!--more-->
 
 
 ## Een korte geschiedenis
