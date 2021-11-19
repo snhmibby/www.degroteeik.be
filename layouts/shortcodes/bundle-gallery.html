@@ -1,0 +1,87 @@
+{{/* bundle-gallery just dunks all the image page-resources */}}
+
+{{/* Defaults */}}
+{{ $height := or (.Get "height") 300 }}
+{{ $thumbSizeHugo := printf "x%d" $height }}
+{{ $thumbSizeCSS := printf "%dpx" $height }}
+{{ $thumbSizeCSS := "150px" }}
+
+<style>
+	.thumb, .close {
+		cursor: pointer;
+	}
+	ul.gallery {
+		list-style:  none;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	ul.gallery li {
+		display: flex;
+		flex-grow: 1;
+		object-fit: cover;
+		margin: 2px;
+	}
+
+	.gallery img {            
+		height: {{ $thumbSizeCSS }};
+		object-fit: cover;
+		flex-grow: 1;
+	}
+
+	.gallery .modal {
+		display: none;
+		position: fixed;
+		z-index: 10;
+		padding-top: 100px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	.modal img {
+		margin: auto;
+		display: block;
+		width: 90%;
+		height: auto;
+	}
+	.modal .close {
+		position: absolute;
+		top: 15px;
+		right: 35px;
+		font-size:40px;
+	}
+</style>
+
+<ul class="gallery">
+	{{ range .Page.Resources.ByType "image" }}            
+		{{ $thumb := .Resize $thumbSizeHugo }}
+		<li>
+			<img class="thumb" src="{{ $thumb.RelPermalink }}">
+			<div class="modal">
+				<span class="close">&times;</span>
+				<img class="full-image" src="{{.RelPermalink}}">
+			</details>
+		</li>
+	{{ end }}
+</div>
+
+<script>
+	//find all galleries
+	let galleries = document.querySelectorAll(".gallery");
+	for (const g of galleries) {
+		//set up click handlers on thumbnails
+		for (var thumb of g.querySelectorAll(".thumb")) {
+			let modal = thumb.nextElementSibling;
+			thumb.onclick = function() {
+				modal.style.display="block";
+			}
+			let closeBtn = modal.querySelector(".close");
+			closeBtn.onclick = function() {
+				modal.style.display="none";
+			}
+		}
+	}
+</script>

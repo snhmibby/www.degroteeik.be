@@ -53,3 +53,7 @@ natuur**.
 
 Dit is een plek waar je makkelijk de stress van het gewone leven kan
 loslaten en je eigen kracht en waardigheid kunt voelen.
+
+# Sfeer beelden
+
+{{< bundle-gallery >}}
