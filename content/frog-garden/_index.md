@@ -13,7 +13,7 @@ natuur**.
 ## Een korte geschiedenis
 
 - De frog garden werd gekwaakt, nee sorry, gekraakt rond 2013.
-- Sindsdien kwamen er velen mensen op bezoek of verbleven er voor een korte tijd.
+- Sindsdien kwamen er vele mensen op bezoek of verbleven er voor een korte tijd.
 - Rond 2016 sloten we een akkoord met de eigenaar om het stukje land en het huis te gebruiken.
 - In de herfst van 2020 kochten we de plek over van de vorige eigenaars.
 - Wat zal de toekomst verder brengen? De tijd zal het vertellen, maar jij kan er deel van uitmaken.
@@ -51,5 +51,5 @@ natuur**.
   wat ons helpt om gezond en gelukkig te zijn. Laat het ons weten als je
   vaardigheden of kennis hebt die je wilt delen!
 
-Dit is een plek waar je makkelijk veel van de stress van het gewone leven kan
-loslaten en je eigen kracht en waardigheid voelen.
+Dit is een plek waar je makkelijk de stress van het gewone leven kan
+loslaten en je eigen kracht en waardigheid kunt voelen.
