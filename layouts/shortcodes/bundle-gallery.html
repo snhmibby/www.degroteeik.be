@@ -69,11 +69,9 @@
 	for (let g of document.querySelectorAll(".gallery")) {
 		for (let thumb of g.querySelectorAll(".gallery-thumb")) {
 			let modal = thumb.nextElementSibling;
-			//thumbnail click handler
 			thumb.onclick = function() {
 				modal.style.display="block";
 			}
-			//modal click handler
 			let closeBtn = modal.querySelector(".gallery-close");
 			closeBtn.onclick = function() {
 				modal.style.display="none";
