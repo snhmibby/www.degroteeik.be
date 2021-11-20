@@ -3,7 +3,6 @@
 <!-- default arguments -->
 {{ $height := or (.Get "height") 150 }}
 {{ $thumbSizeHugo := printf "x%d" (mul 2 $height) }}
-{{ $thumbSizeCSS := printf "%dpx" $height }}
 
 <style>
 	.gallery-thumb, .gallery-close {
@@ -18,11 +17,11 @@
 	ul.gallery li {
 		display: flex;
 		flex-grow: 1;
-		object-fit: fill;
+		object-fit: cover;
 		margin: 1px;
 	}
 	.gallery img {            
-		height: {{ $thumbSizeCSS }};
+		height: {{ $height }}px;
 		object-fit: cover;
 		flex-grow: 1;
 	}
@@ -59,7 +58,7 @@
 			<img class="gallery-thumb" src="{{ $thumb.RelPermalink }}">
 			<div class="gallery-modal">
 				<span class="gallery-close">&times;</span>
-				<img class="full-image" src="{{.RelPermalink}}">
+				<img class="full-image" src="{{ .RelPermalink }}">
 			</div>
 		</li>
 	{{ end }}

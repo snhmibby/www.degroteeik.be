@@ -1,3 +1,9 @@
 baseURL: '/'
 title: 'De Grote Eik'
 theme: 'binario'
+sectionPagesMenu: main
+params:
+  colorTheme: 'dark-green'
+  breadcrumb:
+    enable: true
+  mainSections: ["visie", "frog-garden"]
