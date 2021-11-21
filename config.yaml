@@ -6,4 +6,3 @@ params:
   colorTheme: 'dark-green'
   breadcrumb:
     enable: true
-  mainSections: ["visie", "frog-garden"]

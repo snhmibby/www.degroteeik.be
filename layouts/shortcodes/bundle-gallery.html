@@ -3,78 +3,27 @@
 <!-- default arguments -->
 {{ $height := or (.Get "height") 150 }}
 {{ $thumbSizeHugo := printf "x%d" (mul 2 $height) }}
+{{ $id := now.UnixNano }}
 
-<style>
-	.gallery-thumb, .gallery-close {
-		cursor: pointer;
-	}
-	ul.gallery {
-		display: flex;
-		flex-wrap: wrap;
-		list-style:  none;
-		padding-left: 0;
-	}
-	ul.gallery li {
-		display: flex;
-		flex-grow: 1;
-		object-fit: cover;
-		margin: 1px;
-	}
-	.gallery img {            
-		height: {{ $height }}px;
-		object-fit: cover;
-		flex-grow: 1;
-	}
-	.gallery .gallery-modal {
-		display: none;
-		position: fixed;
-		z-index: 10;
-		padding-top: 50px;
-		left: 0;
-		top: 0;
-		width: 100vw;
-		height: 100vh;
-		overflow: auto;
-		background-color: rgba(0, 0, 0, 0.95);
-	}
-	.gallery-modal img {
-		margin: auto;
-		display: block;
-		width: 90%;
-		height: auto;
-	}
-	.gallery-modal .gallery-close {
-		position: absolute;
-		top: 0px;
-		right: 15px;
-		font-size:40px;
-	}
-</style>
+<!-- should be in header, same as javascript below, but not sure it's possible with this theme :X -->
+{{ $options := (dict "targetPath" "css/gallery.css") }}
+{{ $css := resources.Get "components/gallery/gallery.scss" | toCSS $options }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
-<ul class="gallery">
+<ul id="{{ $id }}" class="gallery">
 	{{ range .Page.Resources.ByType "image" }}            
 		{{ $thumb := .Resize $thumbSizeHugo }}
 		<li>
 			<img class="gallery-thumb" src="{{ $thumb.RelPermalink }}">
 			<div class="gallery-modal">
-				<span class="gallery-close">&times;</span>
-				<img class="full-image" src="{{ .RelPermalink }}">
+				<img class="gallery-full" src="{{ .RelPermalink }}">
 			</div>
 		</li>
 	{{ end }}
 </ul>
 
+{{ $gallery := resources.Get "components/gallery/gallery.js" }}
+<script src="{{$gallery.RelPermalink}}"></script>
 <script>
-	for (let g of document.querySelectorAll(".gallery")) {
-		for (let thumb of g.querySelectorAll(".gallery-thumb")) {
-			let modal = thumb.nextElementSibling;
-			thumb.onclick = function() {
-				modal.style.display="block";
-			}
-			let closeBtn = modal.querySelector(".gallery-close");
-			closeBtn.onclick = function() {
-				modal.style.display="none";
-			}
-		}
-	}
+	new Gallery(document.getElementById("{{ $id }}"))
 </script>

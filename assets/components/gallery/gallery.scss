@@ -1,0 +1,59 @@
+.gallery {
+	display: flex;
+	flex-flow: row wrap;
+	list-style:  none;
+	padding: 0;
+	overflow: auto;
+
+	li {
+		display: flex;
+		flex: 1 0 auto;
+		margin: 1px;
+		object-fit: cover;
+	}
+
+	img.gallery-thumb {            
+		flex-grow: 1;
+		height: 150px;
+		margin: 0;
+		cursor: pointer;
+		object-fit: cover;
+	}
+
+	.gallery-modal {
+		display: none;
+		align-items: center;
+		position: relative;
+		position: fixed;
+		z-index: 99999;
+		left: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		overflow: scroll;
+		background-color: rgba(0, 0, 0, 0.9);
+
+		img.gallery-full {
+			overflow: auto;
+			margin: auto;
+			display: block;
+			max-width: 90%;
+			max-height: 90%;
+		}
+
+		.gallery-button {
+			color: white;
+			position: absolute;
+			font-size:80px;
+			cursor: pointer;
+			top: 50vh;
+			border-radius: 10px;
+			background-color: rgba(0, 0, 0, 0.2);
+
+			&:hover {
+				color: gray;
+				background-color: rgba(0,0,0,0.5);
+			}
+		}
+	}
+}
