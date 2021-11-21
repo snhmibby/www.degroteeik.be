@@ -23,7 +23,7 @@
 </ul>
 
 {{ $gallery := resources.Get "components/gallery/gallery.js" }}
-<script src="{{$gallery.RelPermalink}}"></script>
+<script src="{{ $gallery.RelPermalink }}"></script>
 <script>
-	new Gallery(document.getElementById("{{ $id }}"))
+	new Gallery(document.getElementById("{{ $id }}"));
 </script>
