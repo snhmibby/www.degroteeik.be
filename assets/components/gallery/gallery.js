@@ -1,5 +1,5 @@
 /* Gallery thinks your HTML should look like so:
- * <ul class="gallery">    (or ol)
+ * <ul id="my-gallery" class="gallery">    (or ol)
  *   <li>
  *     <img class="gallery-thumbnail">
  *     <div class="gallery-modal">
@@ -8,6 +8,7 @@
  *     <img class="gallery-thumbnail">
  *     <div class="gallery-modal">
  *       <img class="gallery-full">
+ * <script> new Gallery(document.query('#my-gallery')) </script>
  */
 
 class Gallery {
@@ -28,25 +29,25 @@ class Gallery {
 			next.style.right = "20px"
 
 			//click handlers
-			thumb.onclick = () => this.pop(item)
-			modal.onclick = () => this.unpop(item)
+			thumb.onclick = () => this.show(item)
+			modal.onclick = () => this.hide(item)
 		}
 	}
 
-	pop(item) {
+	show(item) {
 		this.curItem = item
 		let modal = item.querySelector('.gallery-modal')
 		modal.style.display = 'flex'
 	}
 
-	unpop(item) {
+	hide(item) {
 		let modal = item.querySelector('.gallery-modal')
 		modal.style.display = 'none'
 	}
 
 	slide(nextIdx) {
-		this.unpop(this.curItem)
-		this.pop(this.list[nextIdx])
+		this.hide(this.curItem)
+		this.show(this.list[nextIdx])
 	}
 
 	addButton(item, next, text) {
