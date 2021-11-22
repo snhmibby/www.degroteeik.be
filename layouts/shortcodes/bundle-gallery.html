@@ -22,8 +22,10 @@
 	{{ end }}
 </ul>
 
-{{ $gallery := resources.Get "components/gallery/gallery.js" }}
-<script src="{{ $gallery.RelPermalink }}"></script>
-<script>
+{{ $jsOpts := dict "format" "esm" }}
+{{ $gallery := resources.Get "components/gallery/gallery.js" | js.Build }}
+<script src="{{ $gallery.RelPermalink }}" type="module"></script>
+<script type="module">
+	import {Gallery} from './gallery.js'
 	new Gallery(document.getElementById("{{ $id }}"));
 </script>

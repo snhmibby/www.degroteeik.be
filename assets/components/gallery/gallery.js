@@ -11,7 +11,7 @@
  * <script> new Gallery(document.querySelector('#my-gallery')) </script>
  */
 
-class Gallery {
+export class Gallery {
 	constructor(list) {
 		this.items = list.querySelectorAll('li')
 		this.curIdx = 0
