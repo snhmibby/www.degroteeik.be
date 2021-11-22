@@ -10,12 +10,13 @@
  *       <img class="gallery-full">
  * <script> new Gallery(document.querySelector('#my-gallery')) </script>
  */
+import 'js/swiped-events';
 
 export class Gallery {
 	items : NodeListOf<HTMLElement>
 	curIdx: number
 	curItem: HTMLElement
-	constructor(list: Element) {
+	constructor(list: HTMLElement) {
 		this.items = list.querySelectorAll('li')
 		this.curIdx = 0
 		this.curItem = undefined
@@ -23,36 +24,47 @@ export class Gallery {
 		let nelem = this.items.length
 		for (let i = 0; i < this.items.length; i++) {
 			let item = this.items[i]
-
-			//install next/prev buttons around the full-size image
 			let full: HTMLElement = item.querySelector('.gallery-full')
-			this.addButton(full, (i - 1 + nelem) % nelem, "<", 'beforebegin')
-			this.addButton(full, (i + 1) % nelem, ">", 'afterend')
-
-			//click handlers hide/show modal
 			let thumb: HTMLElement = item.querySelector('.gallery-thumb')
 			let modal: HTMLElement = item.querySelector('.gallery-modal')
+
+			//install next/prev buttons around the full-size image
+			let prev = (i - 1 + nelem) % nelem
+			let next = (i + 1) % nelem
+			this.addButton(full, prev, "<", 'beforebegin')
+			this.addButton(full, next, ">", 'afterend')
+
+			//install swipe handlers
+			modal.addEventListener('swiped-left', () => this.swipe(this.items[next]))
+			modal.addEventListener('swiped-right', () => this.swipe(this.items[prev]))
+
+			//click handlers hide/show modal
 			modal.onclick = () => this.hide(modal)
 			thumb.onclick = () => this.show(modal)
 		}
 	}
 
-	show(item) {
+	show(item : HTMLElement) {
 		this.curItem = item
 		item.style.display = 'flex'
 	}
 
-	hide(item) {
+	hide(item : HTMLElement) {
 		item.style.display = 'none'
 	}
 
-	slide(next) {
+	swipe(next : HTMLElement) {
+		console.log('swiped!')
+		this.slide(next.querySelector('.gallery-modal'))
+	}
+
+	slide(next : HTMLElement) {
 		this.hide(this.curItem)
 		this.show(next)
 	}
 
 	addButton(item: HTMLElement, nextIdx: number, text: string, where: InsertPosition) {
-		let nextModal = this.items[nextIdx].querySelector('.gallery-modal')
+		let nextModal : HTMLElement = this.items[nextIdx].querySelector('.gallery-modal')
 		let btn = document.createElement("span")
 		btn.innerText = text
 		btn.className = 'gallery-button'
