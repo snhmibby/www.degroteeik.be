@@ -23,7 +23,7 @@
 </ul>
 
 {{ $jsOpts := dict "format" "esm" }}
-{{ $gallery := resources.Get "components/gallery/gallery.js" | js.Build }}
+{{ $gallery := resources.Get "components/gallery/gallery.js" | js.Build $jsOpts }}
 <script src="{{ $gallery.RelPermalink }}" type="module"></script>
 <script type="module">
 	import {Gallery} from './gallery.js'
