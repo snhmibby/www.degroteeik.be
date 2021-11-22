@@ -23,9 +23,9 @@
 </ul>
 
 {{ $jsOpts := dict "format" "esm" }}
-{{ $gallery := resources.Get "components/gallery/gallery.js" | js.Build $jsOpts }}
+{{ $gallery := resources.Get "components/gallery/gallery.ts" | js.Build $jsOpts }}
 <script src="{{ $gallery.RelPermalink }}" type="module"></script>
 <script type="module">
-	import {Gallery} from './gallery.js'
+	import {Gallery} from '{{ $gallery.RelPermalink }}'
 	new Gallery(document.getElementById("{{ $id }}"));
 </script>
