@@ -1,3 +1,5 @@
+import 'js/swiped-events';
+
 /* Gallery assumes your HTML looks like so:
  * <ul id="my-gallery" class="gallery">    (or ol)
  *   <li>
@@ -10,10 +12,9 @@
  *       <img class="gallery-full">
  * <script> new Gallery(document.querySelector('#my-gallery')) </script>
  */
-import 'js/swiped-events';
 
 export class Gallery {
-	items : NodeListOf<HTMLElement>
+	items : NodeListOf<HTMLLIElement>
 	curIdx: number
 	curItem: HTMLElement
 	constructor(list: HTMLElement) {
@@ -24,9 +25,9 @@ export class Gallery {
 		let nelem = this.items.length
 		for (let i = 0; i < this.items.length; i++) {
 			let item = this.items[i]
-			let full: HTMLElement = item.querySelector('.gallery-full')
-			let thumb: HTMLElement = item.querySelector('.gallery-thumb')
-			let modal: HTMLElement = item.querySelector('.gallery-modal')
+			let full: HTMLImageElement = item.querySelector('.gallery-full')
+			let thumb: HTMLImageElement = item.querySelector('.gallery-thumb')
+			let modal: HTMLDivElement = item.querySelector('.gallery-modal')
 
 			//install next/prev buttons around the full-size image
 			let prev = (i - 1 + nelem) % nelem
@@ -53,18 +54,17 @@ export class Gallery {
 		item.style.display = 'none'
 	}
 
-	swipe(next : HTMLElement) {
-		console.log('swiped!')
+	swipe(next : HTMLLIElement) {
 		this.slide(next.querySelector('.gallery-modal'))
 	}
 
-	slide(next : HTMLElement) {
+	slide(next : HTMLDivElement) {
 		this.hide(this.curItem)
 		this.show(next)
 	}
 
 	addButton(item: HTMLElement, nextIdx: number, text: string, where: InsertPosition) {
-		let nextModal : HTMLElement = this.items[nextIdx].querySelector('.gallery-modal')
+		let nextModal : HTMLDivElement = this.items[nextIdx].querySelector('.gallery-modal')
 		let btn = document.createElement("span")
 		btn.innerText = text
 		btn.className = 'gallery-button'
