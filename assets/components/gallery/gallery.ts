@@ -27,6 +27,8 @@ export class Gallery {
 			let item = this.items[i]
 			let full: HTMLImageElement = item.querySelector('.gallery-full')
 			let thumb: HTMLImageElement = item.querySelector('.gallery-thumb')
+			console.log(full)
+			console.log(thumb)
 			let modal: HTMLDivElement = item.querySelector('.gallery-modal')
 
 			//install next/prev buttons around the full-size image
