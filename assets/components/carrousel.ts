@@ -1,4 +1,4 @@
-import 'js/util'
+import {mkButton} from 'js/util'
 
 /* carrousel creates a div with buttons and a list of items
  * and will create a looping carrousel with the list of elements on the div,
@@ -9,33 +9,44 @@ export class Carrousel {
 	nelem = 0
 	HTMLNode : HTMLDivElement
 
+	/* create structure like:
+	 * <div class='carrousel'>
+	 *   <ol class='carrousel-list'>
+	 *     <li class='carrousel-item'>
+	 *       <item from arguments>
+	 */
 	constructor(items: NodeListOf<HTMLElement>) {
 		this.HTMLNode = document.createElement('div')
 		this.HTMLNode.className = 'carrousel'
 		this.nelem = items.length
 
-		//create list of elements
 		let list = document.createElement('ol')
 		this.HTMLNode.appendChild(list)
 		list.className = 'carrousel-list'
 		items.forEach((v, key) => {
 			let li = document.createElement('li')
 			li.className = 'carrousel-item'
-			li.id = this.id + key.toString()
+			li.id = this.itemID(key)
 			li.appendChild(v)
 			list.appendChild(li)
 		})
 
 		//next/prev button
-		mkButton(list, '<', 'beforebegin', () => this.prev())
-		mkButton(list, '>', 'afterend', () => this.next())
+		let prev = mkButton(list, '<', 'beforebegin', () => this.prev())
+		let next = mkButton(list, '>', 'afterend', () => this.next())
+		prev.classList.add('prev-button')
+		next.classList.add('next-button')
+	}
+
+	itemID(k): string {
+		return this.id + k.toString()
 	}
 
 	items(): NodeListOf<HTMLElement> {
 		return this.HTMLNode.querySelectorAll('.carrousel-item')
 	}
 
-	focussed(): number {
+	get current(): number {
 		let item = this.items()
 		let p = this.HTMLNode.getBoundingClientRect()
 		for (let i = 0; i < item.length; i++) {
@@ -44,21 +55,21 @@ export class Carrousel {
 				return i
 			}
 		}
-		throw 'Carrousel.focussed(): no item in screen'
+		throw 'Carrousel.current(): no item in screen'
 	}
 
 	focus(i: number) {
-		let node = document.getElementById(this.id + i.toString())
+		let node = document.getElementById(this.itemID(i))
 		node.scrollIntoView()
 	}
 
 	next() {
-		let i = (this.focussed() + 1) % this.nelem
+		let i = (this.current + 1) % this.nelem
 		this.focus(i)
 	}
 
 	prev() {
-		let i = (this.focussed() - 1 + this.nelem) % this.nelem
+		let i = (this.current - 1 + this.nelem) % this.nelem
 		this.focus(i)
 	}
 }

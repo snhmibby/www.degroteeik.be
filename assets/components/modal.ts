@@ -1,4 +1,4 @@
-import 'js/util'
+import {mkButton} from 'js/util'
 /* Modal implements a simple pop up screen.
  * It has a close button, and pressing escape closes it.
  */
