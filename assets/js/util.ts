@@ -1,9 +1,9 @@
-export function mkButton(item: HTMLElement, text: string, where: InsertPosition, fn) {
-	let btn = document.createElement("span")
-	btn.innerText = text
+export function mkButton(parent: HTMLElement, html: string, fn) {
+	let btn = document.createElement('span')
+	btn.innerHTML = html
 	btn.className = 'icon-button'
 	btn.onclick = fn
-	item.insertAdjacentElement(where, btn)
+	parent.appendChild(btn)
 	return btn
 }
 

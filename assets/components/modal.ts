@@ -13,7 +13,7 @@ export class Modal {
 		div.className = 'popup modal hidden'
 		div.appendChild(el)
 
-		let b = mkButton(el, 'x', 'afterend', () => this.hide())
+		let b = mkButton(div, 'x', () => this.hide())
 		b.classList.add('close')
 
 		document.addEventListener('keydown', (ev) => {

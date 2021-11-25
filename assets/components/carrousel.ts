@@ -8,9 +8,12 @@ export class Carrousel {
 	id = 'id' + performance.now()
 	nelem = 0
 	HTMLNode : HTMLDivElement
+	lastcurrent = 0
 
 	/* create structure like:
 	 * <div class='carrousel'>
+	 *   <button prev>
+	 *   <button next>
 	 *   <ol class='carrousel-list'>
 	 *     <li class='carrousel-item'>
 	 *       <item from arguments>
@@ -19,6 +22,11 @@ export class Carrousel {
 		this.HTMLNode = document.createElement('div')
 		this.HTMLNode.className = 'carrousel'
 		this.nelem = items.length
+
+		let prev = mkButton(this.HTMLNode, '<', () => this.prev())
+		let next = mkButton(this.HTMLNode, '>', () => this.next())
+		prev.classList.add('prev-button')
+		next.classList.add('next-button')
 
 		let list = document.createElement('ol')
 		this.HTMLNode.appendChild(list)
@@ -30,12 +38,6 @@ export class Carrousel {
 			li.appendChild(v)
 			list.appendChild(li)
 		})
-
-		//next/prev button
-		let prev = mkButton(list, '<', 'beforebegin', () => this.prev())
-		let next = mkButton(list, '>', 'afterend', () => this.next())
-		prev.classList.add('prev-button')
-		next.classList.add('next-button')
 	}
 
 	itemID(k): string {
@@ -46,30 +48,33 @@ export class Carrousel {
 		return this.HTMLNode.querySelectorAll('.carrousel-item')
 	}
 
-	get current(): number {
+	current(): number {
 		let item = this.items()
 		let p = this.HTMLNode.getBoundingClientRect()
 		for (let i = 0; i < item.length; i++) {
 			let n = item[i].getBoundingClientRect()
-			if (p.x < n.right && n.x < p.right) {
+			//the first (and only?) item that's fully in the viewbox
+			if (p.x <= n.x && n.right <= p.right) {
 				return i
 			}
 		}
-		throw 'Carrousel.current(): no item in screen'
+		//backup in case there is no item in full view
+		return this.lastcurrent
 	}
 
 	focus(i: number) {
+		this.lastcurrent = i
 		let node = document.getElementById(this.itemID(i))
 		node.scrollIntoView()
 	}
 
 	next() {
-		let i = (this.current + 1) % this.nelem
+		let i = (this.current() + 1) % this.nelem
 		this.focus(i)
 	}
 
 	prev() {
-		let i = (this.current - 1 + this.nelem) % this.nelem
+		let i = (this.current() - 1 + this.nelem) % this.nelem
 		this.focus(i)
 	}
 }
