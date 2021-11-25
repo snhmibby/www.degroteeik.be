@@ -1,3 +1,11 @@
+:root {
+	--icon-bg: black;
+	--icon-color: white;
+	--icon-button-offset: 5px;
+	--icon-size: 2rem;
+	--icon-button-padding: 0.7rem;
+}
+
 .icon-button {
 	background-color: var(--icon-bg);
 	color: var(--icon-color);
