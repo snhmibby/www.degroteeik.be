@@ -9,6 +9,7 @@ export class Carrousel {
 	nelem = 0
 	HTMLNode : HTMLDivElement
 	lastcurrent = 0
+	scrollFocus : HTMLOListElement //focus this for left/right buttons to work
 
 	/* create structure like:
 	 * <div class='carrousel'>
@@ -18,7 +19,7 @@ export class Carrousel {
 	 *     <li class='carrousel-item'>
 	 *       <item from arguments>
 	 */
-	constructor(items: NodeListOf<HTMLElement>) {
+	constructor(items: HTMLElement[]) {
 		this.HTMLNode = document.createElement('div')
 		this.HTMLNode.className = 'carrousel'
 		this.nelem = items.length
@@ -29,6 +30,7 @@ export class Carrousel {
 		next.classList.add('next-button')
 
 		let list = document.createElement('ol')
+		this.scrollFocus = list
 		this.HTMLNode.appendChild(list)
 		list.className = 'carrousel-list'
 		items.forEach((v, key) => {
@@ -66,6 +68,7 @@ export class Carrousel {
 		this.lastcurrent = i
 		let node = document.getElementById(this.itemID(i))
 		node.scrollIntoView()
+		this.scrollFocus.focus()
 	}
 
 	next() {

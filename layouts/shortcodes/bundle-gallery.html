@@ -13,8 +13,9 @@
 <section id="{{ $id }}" class="gallery">
 	{{ range .Page.Resources.ByType "image" }}            
 		{{ $thumb := .Resize $thumbSizeHugo }}
-		<img class="gallery-thumb" src="{{ $thumb.RelPermalink }}">
-		<img class="gallery-full" src="{{ .RelPermalink }}">
+		<a class="gallery-full" href="{{ .RelPermalink }}">
+			<img class="gallery-thumb" src="{{ $thumb.RelPermalink }}">
+		</a>
 	{{ end }}
 </ul>
 
