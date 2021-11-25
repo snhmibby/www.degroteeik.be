@@ -1,15 +1,14 @@
 import {ChevronLeft,ChevronRight,IconButton} from 'components/iconbutton';
 
 /* carrousel creates a div with buttons and a list of items
- * and will create a looping carrousel with the list of elements on the div,
- * including buttons and such.
+ * and will create a looping carrousel with the list of elements on the div.
  */
 export class Carrousel {
 	id = 'id' + performance.now()
 	nelem = 0
 	HTMLNode : HTMLDivElement
 	lastcurrent = 0
-	scrollFocus : HTMLOListElement //focus this for left/right buttons to work
+	scrollFocus : HTMLOListElement //focus this for left/right buttons to scroll
 
 	/* create structure like:
 	 * <div class='carrousel'>

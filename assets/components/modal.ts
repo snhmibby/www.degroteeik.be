@@ -1,6 +1,7 @@
 import {X, IconButton} from './iconbutton'
 /* Modal implements a simple pop up screen.
  * It has a close button, and pressing escape closes it.
+ * It takes the entire screen and displays the element in the constructor argument.
  */
 
 //TODO: I don't know how to block interaction with things behind the modal :)
