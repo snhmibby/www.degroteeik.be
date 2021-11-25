@@ -3,14 +3,8 @@
 <!-- default arguments -->
 {{ $height := or (.Get "height") 150 }}
 {{ $thumbSizeHugo := printf "x%d" (mul 2 $height) }}
-{{ $id := now.UnixNano }}
 
-<!-- should be in header, same as javascript below, but not sure it's possible with this theme :X -->
-{{ $options := (dict "targetPath" "css/gallery.css") }}
-{{ $css := resources.Get "components/style.scss" | toCSS $options }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}">
-
-<section id="{{ $id }}" class="gallery">
+<section class="gallery">
 	{{ range .Page.Resources.ByType "image" }}            
 		{{ $thumb := .Resize $thumbSizeHugo }}
 		<a class="gallery-full" href="{{ .RelPermalink }}">
@@ -18,11 +12,3 @@
 		</a>
 	{{ end }}
 </ul>
-
-{{ $jsOpts := dict "format" "esm" }}
-{{ $gallery := resources.Get "components/gallery.ts" | js.Build $jsOpts }}
-<script src="{{ $gallery.RelPermalink }}" type="module"></script>
-<script type="module">
-	import {Gallery} from '{{ $gallery.RelPermalink }}'
-	var gally = new Gallery(document.getElementById("{{ $id }}"));
-</script>

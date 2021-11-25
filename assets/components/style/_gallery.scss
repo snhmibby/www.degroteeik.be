@@ -1,0 +1,29 @@
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	--width-carrousel: 95%;
+
+	a {
+		display: flex;
+		flex-grow: 1;
+	}
+
+	ol,ul {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+
+		li {
+			display: flex;
+			flex-grow: 1;
+		}
+	}
+
+	.gallery-thumb {            
+		margin: 1px;
+		height: 150px;
+		flex-grow: 1;
+		cursor: pointer;
+		object-fit: cover;
+	}
+}

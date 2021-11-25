@@ -1,0 +1,13 @@
+.icon-button {
+	background-color: var(--icon-bg);
+	color: var(--icon-color);
+	padding: var(--icon-button-padding);
+	border: none;
+	border-radius: 10%;
+	cursor: pointer;
+	svg {
+		height: var(--icon-size);
+		width: var(--icon-size);
+	}
+}
+
