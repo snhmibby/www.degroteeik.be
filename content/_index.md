@@ -21,7 +21,7 @@ een mooi huisje op staat. We zoeken mensen die mee willen bouwen en zorg
 dragen voor het huisje. Doe je mee?
 
 ### Work a way bij Johan & Rika
-kijk op de work a way site!
+Kijk op de work a way site!
 
 ### Permacultuur & groentes kweken
 We doen aan bomen planten in het bos. Ook onderhouden we een
