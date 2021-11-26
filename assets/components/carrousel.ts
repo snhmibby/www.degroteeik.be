@@ -1,4 +1,4 @@
-import {ChevronLeft,ChevronRight,IconButton} from 'components/iconbutton';
+import {Icon, IconButton} from 'components/iconbutton';
 
 /* carrousel creates a div with buttons and a list of items
  * and will create a looping carrousel with the list of elements on the div.
@@ -24,8 +24,8 @@ export class Carrousel {
 		this.HTMLNode.className = 'carrousel'
 		this.nelem = items.length
 
-		let prev = IconButton(this.HTMLNode, ChevronLeft, () => this.prev())
-		let next = IconButton(this.HTMLNode, ChevronRight, () => this.next())
+		let prev = IconButton(this.HTMLNode, Icon.ChevronLeft, () => this.prev())
+		let next = IconButton(this.HTMLNode, Icon.ChevronRight, () => this.next())
 		prev.classList.add('prev-button')
 		next.classList.add('next-button')
 

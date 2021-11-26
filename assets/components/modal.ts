@@ -1,4 +1,4 @@
-import {X, IconButton} from './iconbutton'
+import {Icon, IconButton} from './iconbutton'
 /* Modal implements a simple pop up screen.
  * It has a close button, and pressing escape closes it.
  * It takes the entire screen and displays the element in the constructor argument.
@@ -14,7 +14,7 @@ export class Modal {
 		div.className = 'popup modal hidden'
 		div.appendChild(el)
 
-		let b = IconButton(div, X, () => this.hide())
+		let b = IconButton(div, Icon.X, () => this.hide())
 		b.classList.add('close')
 
 		document.addEventListener('keydown', (ev) => {
