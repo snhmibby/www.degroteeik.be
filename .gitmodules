@@ -1,3 +1,6 @@
 [submodule "themes/binario"]
 	path = themes/binario
 	url = https://github.com/vimux/binario
+[submodule "assets/www-components"]
+	path = assets/www-components
+	url = git@github.com:snhmibby/www-components.git
