@@ -1,11 +1,9 @@
 ---
-title: "Gallery Test"
+title: "Foto's"
 date: 2021-11-19T16:28:20+01:00
 ---
 
-Test bundle for the gallery shortcode
+Plaatjes uit het bos
 <!--more-->
-
-# Yo:
 
 {{< bundle-gallery >}}

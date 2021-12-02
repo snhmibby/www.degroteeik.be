@@ -4,11 +4,11 @@ date: 2021-11-05T22:13:01+01:00
 weight: 3
 ---
 
-You can contact us by telephone, e-mail or in person :)
+Hoe kun je ons bereiken?
 <!--more-->
 
-☎: +0032485591943  
-✉: [temporarily my e-mail address](jurjenm@yahoo.com)
+☎: +0032485591943
+✉: [temporarily my e-mail address](mailto:contact@degroteeik.be)
 
 # Route
 ![De laatste 200m het bos in](map.jpg)

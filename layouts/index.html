@@ -6,7 +6,7 @@
 		</div>
 		{{- end }}
 		<div class="cards">
-			{{- range .Site.Sections }}
+			{{- range (where .Site.Sections "Type" "in" site.Params.mainSections) }}
 				<div class="card{{ if and (ge ($.Param "columns") 1) (le ($.Param "columns") 3) }} card--{{ $.Param "columns" }}col{{ else }} card--2col{{ end }}">
 					{{ .Render "summary" }}
 				</div>
