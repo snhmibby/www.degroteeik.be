@@ -1,5 +1,5 @@
 # De Grote Eik
-This repo holds the (maybe?) **[new site](degroteeik.netlify.app)** for [de grote eik](www.degroteeik.be).
+This repo holds the (maybe?) **[new site](https://degroteeik.netlify.app)** for [de grote eik](www.degroteeik.be).
 Anyone can help with site building, translations, editing or new content!!
 
 ## What has been done?
