@@ -15,7 +15,7 @@ Een gemeenschap waar je thuis kan komen in je zelf!
 
 ## Doe mee!
 
-### Frog garden helpen opbouwen
+### In de Frog garden wonen of helpen
 De Frog garden (kikkertuin) is een prachtig stukje grond in het bos, waar
 een mooi huisje op staat. We zoeken mensen die mee willen bouwen en zorg
 dragen voor het huisje. Doe je mee?
