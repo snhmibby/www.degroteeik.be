@@ -8,7 +8,7 @@ Hoe kun je ons bereiken?
 <!--more-->
 
 ☎: +0032485591943
-✉: [temporarily my e-mail address](mailto:contact@degroteeik.be)
+✉: [e-mail](mailto:contact@degroteeik.be)
 
 # Route
 ![De laatste 200m het bos in](map.jpg)
