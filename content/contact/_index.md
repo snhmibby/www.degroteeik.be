@@ -7,7 +7,7 @@ weight: 3
 Hoe kun je ons bereiken?
 <!--more-->
 
-☎: +0032485591943
+☎: +0031 (0)649833582
 ✉: [e-mail](mailto:contact@degroteeik.be)
 
 # Route
