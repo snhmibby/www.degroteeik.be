@@ -1,5 +1,5 @@
 # De Grote Eik
-This repo holds the (maybe?) **[new site](https://degroteeik.netlify.app)** for [de grote eik](http://www.degroteeik.be).
+This repo holds the [site for de grote eik](http://www.degroteeik.be).
 Anyone can help with site building, translations, editing or new content!!
 
 ## What has been done?
@@ -12,6 +12,7 @@ Anyone can help with site building, translations, editing or new content!!
 ## How can I help??
 Create a github account and send pull requests, or send updated documents by mail.
 Please don't edit or save markdown files in Word.
+You will want to look at the files in the /content directory.
 
 ### Simple tasks to do
 - The old content is extremely verbose.
