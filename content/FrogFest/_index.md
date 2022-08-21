@@ -15,7 +15,7 @@ If you'd like to help out send us a message.
 We are looking for people who want  to make music, host workshops, have a market stand, or just want to help co-create something amazing!
 
 ## Flyer
-![Flyer for Frog Fest](/images/events/flyer-mariama.jpg)
+![Flyer for Frog Fest](/images/events/frogfest-flyer.jpg)
 
 
 ## Program
