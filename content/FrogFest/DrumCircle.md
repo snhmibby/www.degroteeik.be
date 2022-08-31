@@ -1,5 +1,5 @@
 ---
-title: "DrumCircle hosted by Yorn"
+title: "DrumCircle"
 date: 2022-08-31T00:57:25+02:00
 ---
 

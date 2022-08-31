@@ -1,5 +1,5 @@
 ---
-title: "Hoop Dance Workshop by Sanna Circle"
+title: "Hoop Dance Workshop"
 date: 2022-08-31T00:59:43+02:00
 ---
 

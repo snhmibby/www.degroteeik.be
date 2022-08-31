@@ -1,5 +1,5 @@
 ---
-title: "Jewelry Workshop by Mariama"
+title: "Jewelry Workshop"
 date: 2022-08-31T01:00:17+02:00
 ---
 

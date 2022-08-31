@@ -1,5 +1,5 @@
 ---
-title: "Ecstatic Dance by Janneke"
+title: "Ecstatic Dance"
 date: 2022-08-31T00:59:23+02:00
 ---
 
