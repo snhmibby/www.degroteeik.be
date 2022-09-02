@@ -26,7 +26,15 @@ Please read the [house rules](/documents/frog-garden-guidelines.pdf) of the frog
 
 ## Location
 For info and the route description, please see the [contact page](/contact).
-Please park your car outside the forest, or even better, come on your own power.
+Park your car outside the forest, or even better, come on your own power.
+
+## Camping & sleeping
+There is a place for tents created in the Frog Garden, you can also camp at Johans or Jurjens place.
+We can use a field near the Frog for campervans.
+
+## Food
+All day there will be something to snack on donation.
+Saturday will be a dinner and Sunday will be a brunch by Pauline, our resident star chef.
 
 # Help us make something beatiful!
 At the moment we are busy organizing.
