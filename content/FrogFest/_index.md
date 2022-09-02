@@ -22,7 +22,7 @@ Keep this in mind when bringing food, drinks and other entertainment aids.
 
 We will supply food, (non-alcoholic) drinks, a place to sleep (bring a tent) and an amazing time on donation.
 
-Please read the [house rules](/frog-garden) of the frog garden
+Please read the [house rules](/documents/frog-garden-guidelines.pdf) of the frog garden
 
 ## Location
 For info and the route description, please see the [contact page](/contact).
