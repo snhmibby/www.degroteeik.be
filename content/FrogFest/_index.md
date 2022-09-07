@@ -30,18 +30,12 @@ There is a place for tents created in the Frog Garden, you can also camp at Joha
 We can use a field near the Frog for campervans.
 
 ## Food
-All day there will be something to snack on donation.
+All day there will be something to snack on donation. Feel free to bring your own food to share for the potluck buffet.
 Saturday will be a dinner and Sunday will be a brunch by Pauline, our resident star chef.
-
-# Help us make something beatiful!
-At the moment we are busy organizing.
-If you'd like to help out send us a message.
-
-We are looking for people who want  to make music, host workshops, have a market stand, or just want to help co-create something amazing!
 
 ## Program
 
-### Saturday
+#### Saturday
 | Time  | What                                         | Where
 | ----- | -------------------------------------------- | ------------
 | 13:00 | [Opening ceremory](/frogfest/ceremony/)      | Sacred Space
@@ -54,7 +48,7 @@ We are looking for people who want  to make music, host workshops, have a market
 | 20:00 | [Ecstatic dance](/frogfest/ecstaticdance/)   | Sacred Space
 | 22:00 | [Fire show](/frogfest/fireshow/)             | ?
 
-### Sunday
+#### Sunday
 All day [market](/frogfest/market/)!
 | Time  | What                                         | Where
 | ----- | -------------------------------------------- | ------------
