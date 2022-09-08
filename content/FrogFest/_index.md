@@ -61,7 +61,7 @@ All day [market](/frogfest/market/)!
 | 15:00 | [Concert by Diether](/frogfest/demanrogue/)  | Music Stage
 | 15:00 | [Jewelry workshop](/frogfest/jewelry-workshop)| ?
 | 16:00 | [Hoop dance workshop](/frogfest/hoopdance/)  | Sacred Space
-| 17:00 | [Santur trance](/frogfest/santur-trance/)    | Sacred Space
+| 17:00 | [Santur trance by Engelbert](/frogfest/santur-trance/)    | Sacred Space
 | 18:00 | Overtone singing workshop                    | ?
 | 19:00 | [Drum circle](/frogfest/drumcircle/)         | Sacred Space
 | 20:00 | [Closing ceremony](/frogfest/ceremony/)      | Sacred Space
