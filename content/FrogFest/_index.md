@@ -66,3 +66,13 @@ All day [market](/frogfest/market/)!
 | 19:00 | [Drum circle](/frogfest/drumcircle/)         | Sacred Space
 | 20:00 | [Closing ceremony](/frogfest/ceremony/)      | Sacred Space
 
+#### Unscheduled activities
+
+| What                                                 | Who
+| ---------------------------------------------------- | ---
+| Face Painting                                        | Aly
+| Auction                                              | Riet
+| Jam Sessions                                         | Anybody
+| Dreads/extensions                                    | Aly & Vojtek
+| Massages                                             | Dorus
+| Reiki healings/readings                              | Maria
