@@ -41,9 +41,9 @@ Saturday will be a dinner and Sunday will be a brunch by Pauline, our resident s
 | ----- | -------------------------------------------- | ------------
 | 13:00 | [Opening ceremory](/frogfest/ceremony/)      | Sacred Space
 | 14:00 | [Circus workshop](/frogfest/kidscorner/)     | Butterfly Space
-| 15:00 | [Mantra singing](/frogfest/mantra-singing/)  | Sacred Space
+| 14:00 | [Mantra singing](/frogfest/mantra-singing/)  | Sacred Space
 | 16:00 | Gemstone Workshop                            | Paradise
-| 16:00 | [Wijnand+band](/frogfest/wijnand/)           | Music Stage
+| 17:00 | [Wijnand+band](/frogfest/wijnand/)           | Music Stage
 | 17:00 | Food buffet/potluck                          | Kitchen
 | 18:00 | [Concert by Flow](/frogfest/flowconcert/)    | Music Stage
 | 19:00 | [Ecstatic dance](/frogfest/ecstaticdance/)   | Sacred Space
