@@ -61,6 +61,7 @@ All day [market](/frogfest/market/)!
 | 14:00 | Silent walk meditation                       | Starting from the bar
 | 15:00 | Overtone singing workshop                    | Music Stage
 | 15:00 | [Jewelry workshop](/frogfest/jewelry-workshop)| Paradise
+| 15:00 | [Ravdrum Meditation](/frogfest/ravdrum)      | Sacred Cicrle
 | 16:00 | [Poppenverhalen](/frogfest/poppenverhalen/)  | Amfibian Theatre (Sacred Space)
 | 16:00 | [Hoop dance workshop](/frogfest/hoopdance/)  | Butterfly Space
 | 17:00 | [Santur trance by Engelbert](/frogfest/santur-trance/)    | Sacred Space
