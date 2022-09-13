@@ -23,7 +23,8 @@ Please read the [house rules](/documents/frog-garden-guidelines.pdf) of the frog
 
 ## Location
 For info and the route description, please see the [contact page](/contact).
-Park your car outside the forest, or even better, come on your own power.
+For cars and campervans, we can use a field between Johans house and the Frog Garden.
+Follow the signs into the forest & onto the field!
 
 ## Camping & sleeping
 There is a place for tents created in the Frog Garden, you can also camp at Johans or Jurjens place.
