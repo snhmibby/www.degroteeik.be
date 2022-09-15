@@ -43,6 +43,7 @@ Saturday will be a dinner and Sunday will be a brunch by Pauline, our resident s
 | 14:00 | [Circus workshop](/frogfest/kidscorner/)     | Butterfly Space
 | 14:00 | [Mantra singing](/frogfest/mantra-singing/)  | Sacred Space
 | 16:00 | Gemstone Workshop                            | Paradise
+| 16:00 | [Ravdrum Meditation](/frogfest/ravdrum)      | Sacred Space
 | 17:00 | [Wijnand+band](/frogfest/wijnand/)           | Music Stage
 | 17:00 | Food buffet/potluck                          | Kitchen
 | 18:00 | [Concert by Flow](/frogfest/flowconcert/)    | Music Stage
@@ -59,9 +60,7 @@ All day [market](/frogfest/market/)!
 | 12:00 | Blindfold movement workshop                  | Butterfly Space
 | 13:00 | [Cacao Ceremony](/frogfest/cacao/)           | Sacred Space
 | 14:00 | Silent walk meditation                       | Starting from the bar
-| 15:00 | Overtone singing workshop                    | Music Stage
 | 15:00 | [Jewelry workshop](/frogfest/jewelry-workshop)| Paradise
-| 15:00 | [Ravdrum Meditation](/frogfest/ravdrum)      | Sacred Cicrle
 | 16:00 | [Poppenverhalen](/frogfest/poppenverhalen/)  | Amfibian Theatre (Sacred Space)
 | 16:00 | [Hoop dance workshop](/frogfest/hoopdance/)  | Butterfly Space
 | 17:00 | [Santur trance by Engelbert](/frogfest/santur-trance/)    | Sacred Space
