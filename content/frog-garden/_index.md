@@ -54,6 +54,8 @@ natuur**.
 Dit is een plek waar je makkelijk de stress van het gewone leven kan
 loslaten en je eigen kracht en waardigheid kunt voelen.
 
+[Hier](/documents/frog-garden-guidelines.pdf) zijn de laatste richtlijnen voor de Frog Garden.
+
 # Sfeer beelden
 
 {{< bundle-gallery >}}
