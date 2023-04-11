@@ -7,7 +7,7 @@ weight: 9
 Hoe kun je ons bereiken?
 <!--more-->
 
-☎: +0031 (0)649833582
+☎: +0031 (0)610748195 (Yorn) or +0031 (0)623091121 (Maarten)
 ✉: [e-mail](mailto:contact@degroteeik.be)
 
 # Route
